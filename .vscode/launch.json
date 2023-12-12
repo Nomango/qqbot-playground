@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Local run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/leafbot/example",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "https_proxy": "http://127.0.0.1:7890",
+                "http_proxy": "http://127.0.0.1:7890",
+                "all_proxy": "http://127.0.0.1:7890"
+            }
+        }
+    ]
+}

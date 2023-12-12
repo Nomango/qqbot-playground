@@ -1,0 +1,6 @@
+logs/
+data/data
+data/session.token
+
+.vscode/*
+!.vscode/launch.json

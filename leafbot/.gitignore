@@ -1,0 +1,13 @@
+./config/config.json
+*.log
+*.exe
+*.png
+*.txt
+*.json
+*_test.go
+.idea
+/node_modules/
+/config/config.yml
+/config/gocq_config.yml
+/logs/
+/data/

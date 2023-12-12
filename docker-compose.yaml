@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  go-cqhttp:
+    container_name: go-cqhttp
+    image: ghcr.io/mrs4s/go-cqhttp:master
+    ports:
+      - 2333:8080
+    volumes:
+      - ./data:/data
+    environment:
+      - CQ_UIN=xxx
+      # - CQ_PWD=xxx
+
+  qsign:
+    image: xzhouqd/qsign:8.9.63
+    container_name: qsign
+    environment:
+      - PORT=8080
+      - COUNT=1
+      - ANDROID_ID=f4da09883355d9c3
+    restart: always
